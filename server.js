@@ -20,16 +20,20 @@ app.set("view engine", "handlebars");
 // require("./routes/api-routes.js")(app);
 
 
-var veg = require('./models/veg')
+var db = require('./models')
 
-var testDate = {totalCarbs: 59}
+var testDate = {vegetable_name: 'tomato'}
 
-veg.create(testDate)
+// db.Vegetable.create(testDate)
+// .then(function(dbveg) {
+//   console.log(dbveg);
+// });
 // Here we introduce HTML routing to serve different HTML files
 require("./routes/html-routes.js")(app);
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, function() {
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
