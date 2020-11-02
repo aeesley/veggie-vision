@@ -19,6 +19,12 @@ app.set("view engine", "handlebars");
 // =============================================================
 // require("./routes/api-routes.js")(app);
 
+
+var veg = require('./models/veg')
+
+var testDate = {totalCarbs: 59}
+
+veg.create(testDate)
 // Here we introduce HTML routing to serve different HTML files
 require("./routes/html-routes.js")(app);
 
