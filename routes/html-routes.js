@@ -1,19 +1,31 @@
 // DEPENDENCIES
 var path = require("path");
 
+var db = require("../models");
+
 module.exports = function(app) {
 
     // Each of the below routes just handles the HTML page that the user gets sent to.
   
     // index route loads view.html
-    app.get("/", function(req, res) {
-      res.render("index", {});
-    });
+    // app.get("/", function(req, res) {
+    //   res.render("index", {});
+    // });
 
     app.get("/all", function(req, res) {
-      res.render("index", {});
+      db.Vegetable.findAll({}).then(function(data) {
+        console.log("===================================");
+        console.log(data);
+        console.log("===================================");
+        var vegetableObject = {
+          Vegetable: data
+        };
+        console.log(vegetableObject);
+        res.render("index", vegetableObject);
+      });
+      // res.render("index", {});
     });
-  
+
     // // add route loads the add.html page,
     // // where users can enter new characters to the db
     // app.get("/add", function(req, res) {
