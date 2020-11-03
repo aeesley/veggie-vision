@@ -9,6 +9,10 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
       res.render("index", {});
     });
+
+    app.get("/all", function(req, res) {
+      res.render("index", {});
+    });
   
     // // add route loads the add.html page,
     // // where users can enter new characters to the db
