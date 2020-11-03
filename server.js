@@ -22,7 +22,7 @@ app.set("view engine", "handlebars");
 
 var db = require('./models')
 
-var testDate = {vegetable_name: 'tomato'}
+// var testDate = {vegetable_name: 'tomato'}
 
 // db.Vegetable.create(testDate)
 // .then(function(dbveg) {

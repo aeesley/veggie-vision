@@ -1,9 +1,41 @@
-// module.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
 
 
 
-//     var Veg = sequelize.define("Veg", {
-//       vegetable_name: DataTypes.STRING,
+    var Vegetable = sequelize.define("Vegetable", {
+
+      vegetable_name: DataTypes.VARCHAR(500),
+      health_benefits: DataTypes.VARCHAR(500),
+      popular_eats: DataTypes.VARCHAR(500),
+      serving: DataTypes.VARCHAR(500),
+      calories: DataTypes.INTEGER,
+      total_fat: DataTypes.INTEGER,
+      sodium: DataTypes.INTEGER,
+      potassium: DataTypes.INTEGER,
+      total_carbo_hydrate: DataTypes.INTEGER,
+      dietary_fiber: DataTypes.INTEGER,
+      sugar: DataTypes.INTEGER,
+      protein: DataTypes.INTEGER,
+      vitamin_a: DataTypes.INTEGER,
+      vitamin_c: DataTypes.INTEGER,
+      iron: DataTypes.INTEGER,
+    });
+    return Vegetable;
+
+
+  };
+
+
+
+//   module.exports = function(sequelize, DataTypes) {
+
+
+
+//     var Vegetable = sequelize.define("Vegetable", {
+
+//       vegetable_name: DataTypes.VARCHAR,
+//       health_benefits: DataTypes.STRING,
+//       popular_eats: DataTypes.STRING,
 //       serving: DataTypes.STRING,
 //       calories: DataTypes.INTEGER,
 //       total_fat: DataTypes.INTEGER,
@@ -17,20 +49,22 @@
 //       vitamin_c: DataTypes.INTEGER,
 //       iron: DataTypes.INTEGER,
 //     });
-//     return Veg;
+//     return Vegetable;
 
 
 //   };
-  
-  module.exports = function(sequelize, DataTypes) {
+
+
+  //Initial test of our db
+//   module.exports = function(sequelize, DataTypes) {
 
 
 
-    var Vegetable = sequelize.define("Vegetable", {
-      vegetable_name: DataTypes.STRING,
-    });
-    return Vegetable;
+//     var Vegetable = sequelize.define("Vegetable", {
+//       vegetable_name: DataTypes.STRING,
+//     });
+//     return Vegetable;
 
 
-  };
+//   };
   
