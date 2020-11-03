@@ -30,7 +30,7 @@ var db = require('./models')
 // });
 // Here we introduce HTML routing to serve different HTML files
 require("./routes/html-routes.js")(app);
-
+require("./routes/api-routes.js")(app);
 // Start our server so that it can begin listening to client requests.
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
