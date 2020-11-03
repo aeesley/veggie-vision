@@ -1,4 +1,6 @@
 var express = require("express");
+// Set Handlebars.
+var exphbs = require("express-handlebars");
 var PORT = process.env.PORT || 8080;
 var app = express();
 
@@ -9,8 +11,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set Handlebars.
-var exphbs = require("express-handlebars");
+
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -29,6 +30,8 @@ var db = require('./models')
 //   console.log(dbveg);
 // });
 // Here we introduce HTML routing to serve different HTML files
+// require("./routes/html-routes.js")(app);
+
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 // Start our server so that it can begin listening to client requests.
