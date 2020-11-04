@@ -12,6 +12,11 @@ module.exports = function(app) {
       res.render("index", {});
     });
 
+    // more page with all the veggies 
+    app.get("/more", function(req, res) {
+      res.render("more", {});
+    });
+
     app.get("/all", function(req, res) {
       db.Vegetable.findAll({}).then(function(data) {
         console.log("===================================");

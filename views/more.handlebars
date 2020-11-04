@@ -1,0 +1,367 @@
+<!doctype html>
+
+<html lang="en">
+   
+   
+    <head>
+       
+       
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="robots" content="noodp">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       
+        <!-- PAGE TITLE -->
+        <title>All the Veggies!</title>
+       
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+       
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+       
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        
+        
+    </head>
+
+   
+    <body>
+    
+       
+       
+        <!-- PRELOADER -->
+        <div class="preloader">
+           
+            <div class="spinner"></div>
+            
+        </div>
+        <!-- /PRELOADER -->
+        
+        
+        
+        <!-- NAVIGATION -->
+        <nav class="navigation-main">
+
+
+            <!-- CONTAINER FLUID -->
+            <div class="container-fluid">
+
+
+                <!-- NAVIGATION HEADER -->
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive" src="/img/navigation-logo.png" alt="" /></a>
+
+                </div>
+                <!-- /NAVIGATION HEADER -->
+
+
+                <!-- NAVBAR -->
+                <div id="navbar" class="navbar-collapse collapse">
+
+
+                    <!-- MENU ITEMS LIST -->
+                    <ul class="navigation-items nav navbar-nav navbar-right">
+
+
+                        <li class="current"><a href="#intro">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+
+                    </ul>
+                    <!-- /MENU ITEMS LIST -->
+
+
+                </div>
+                <!-- /NAVBAR -->
+
+
+            </div>
+            <!-- /CONTAINER FLUID -->
+
+
+        </nav>
+        <!-- /NAVIGATION -->
+        
+
+
+        <!-- SERVICE -->
+        <section id="service">
+        
+        
+            <!-- CONTAINER FLUID -->
+            <div class="container-fluid text-center">
+
+
+                <h3 class="headline scroll-animated-from-bottom">Select a veggie to see what it can do for you.</h3>
+               
+                   
+                <!-- ASPARAGUS COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                   <img data-id="1" data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/asparagus.jpg" alt="image">
+                    <div class="veg-modals">
+                        {{!-- {{#each Vegetable}}
+                            <h2>{{this.dataValues.vegetable_name}}</h2>
+                            <h5>Health Benefits</h5></br>
+                            <body>{{this.dataValues.health_benefits}}</body>
+                            <h5>Popular Ways to Eat</h5></br>
+                            <body>{{this.dataValues.popular_eats}}</body>
+                            <h6>Serving Size</h6></br>
+                            <body>{{this.dataValues.serving}}</body>
+                            <h6>Calories</h6></br>
+                            <body>{{this.dataValues.calories}}</body>
+                            <h6>Total Fat</h6></br>
+                            <body>{{this.dataValues.total_fat}}</body>
+                            <h6>Sodium</h6></br>
+                            <body>{{this.dataValues.sodium}}</body>
+                            <h6>Potassium</h6></br>
+                            <body>{{this.dataValues.potassium}}</body>
+                            <h6>Total Carbohydrates</h6></br>
+                            <body>{{this.dataValues.total_carbo_hydrate}}</body>
+                            <h6>Dietary Fiber</h6></br>
+                            <body>{{this.dataValues.dietary_fiber}}</body>
+                            <h6>Sugar</h6></br>
+                            <body>{{this.dataValues.sugar}}</body>
+                            <h6>Protein</h6></br>
+                            <body>{{this.dataValues.protein}}</body>
+                            <h6>Vitamin A</h6></br>
+                            <body>{{this.dataValues.vitamin_a}}</body>
+                            <h6>Vitamin C</h6></br>
+                            <body>{{this.dataValues.viatmin_c}}</body>
+                            <h6>Iron</h6></br>
+                            <body>{{this.dataValues.iron}}</body>
+                        {{/each}} --}}
+                    </div>
+               
+                </div>
+                <!-- /COLUMN -->
+
+                <!-- Asparagus Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       {{!-- AJAX call replaces  --}}
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Asparagus Modal --}}
+
+
+                <!-- Bell Pepper COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                    <img data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/bell_peppers.jpg" alt="image">
+               
+                </div>
+                <!-- /COLUMN -->
+
+                <!-- Bell Pepper Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Bell Pepper Modal --}}
+
+
+                <!-- Broccoli COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                   <img data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/broc_chop.jpg" alt="image">
+               
+                </div>
+                <!-- /Broccoli COLUMN -->
+
+                <!-- Broccoli Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Broccoli Modal --}}
+
+
+                <!-- CARROT COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                   <img data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/carrot_btn.jpg" alt="image">
+
+                </div>
+                <!-- /CARROT COLUMN -->
+
+                <!-- Carrot Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Carrot Modal --}}
+
+
+                <!-- CAULIFLOWER COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                  <img data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/cauliflower.jpg" alt="image">
+               
+                </div>
+                <!-- /CAULIFLOWER COLUMN -->
+
+                <!-- Cauliflower Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Cauliflower Modal --}}
+
+
+                <!-- CELERY COLUMN -->
+                <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
+
+                   <img data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/celery.jpg" alt="image">
+
+                </div>
+                <!-- /CELERY COLUMN -->
+
+                <!-- Celery Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                {{!-- /Celery Modal --}}
+
+
+            </div>
+            <!-- /CONTAINER FLUID -->
+
+
+        </section>
+        <!-- /SERVICE -->
+      
+        
+        
+        <!-- BACKGROUND CONTENT -->
+        <div class="background-content parallax-on">
+
+
+            <!-- BACKGROUND CONTENT INNER -->
+            <div class="background-content-inner">
+
+                <div class="background-overlay"></div>
+                <div class="background-img layer" data-depth="0.1"></div>
+
+            </div>
+            <!-- /BACKGROUND CONTENT INNER -->
+
+
+        </div>
+        <!-- /BACKGROUND CONTENT -->
+        
+        
+        
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="/js/plugins.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+   
+   
+   
+    </body> 
+    
+    
+</html>
