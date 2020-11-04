@@ -197,15 +197,50 @@
                 <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
 
                    <img data-id="1" data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/asparagus.jpg" alt="image">
+                    <div class="veg-modals">
+                        {{#each Vegetable}}
+                            <h2>{{this.dataValues.vegetable_name}}</h2>
+                            <h5>Health Benefits</h5></br>
+                            <body>{{this.dataValues.health_benefits}}</body>
+                            <h5>Popular Ways to Eat</h5></br>
+                            <body>{{this.dataValues.popular_eats}}</body>
+                            <h6>Serving Size</h6></br>
+                            <body>{{this.dataValues.serving}}</body>
+                            <h6>Calories</h6></br>
+                            <body>{{this.dataValues.calories}}</body>
+                            <h6>Total Fat</h6></br>
+                            <body>{{this.dataValues.total_fat}}</body>
+                            <h6>Sodium</h6></br>
+                            <body>{{this.dataValues.sodium}}</body>
+                            <h6>Potassium</h6></br>
+                            <body>{{this.dataValues.potassium}}</body>
+                            <h6>Total Carbohydrates</h6></br>
+                            <body>{{this.dataValues.total_carbo_hydrate}}</body>
+                            <h6>Dietary Fiber</h6></br>
+                            <body>{{this.dataValues.dietary_fiber}}</body>
+                            <h6>Sugar</h6></br>
+                            <body>{{this.dataValues.sugar}}</body>
+                            <h6>Protein</h6></br>
+                            <body>{{this.dataValues.protein}}</body>
+                            <h6>Vitamin A</h6></br>
+                            <body>{{this.dataValues.vitamin_a}}</body>
+                            <h6>Vitamin C</h6></br>
+                            <body>{{this.dataValues.viatmin_c}}</body>
+                            <h6>Iron</h6></br>
+                            <body>{{this.dataValues.iron}}</body>
+                        {{/each}}
+                    </div>
                
                 </div>
                 <!-- /COLUMN -->
 
                 <!-- Asparagus Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
+
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -216,6 +251,8 @@
                        
                     </div>
                     <div class="modal-footer">
+                        <div>
+                        </div>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
