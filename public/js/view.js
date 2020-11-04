@@ -26,3 +26,35 @@
 //         $("#saved-section").append("<h3>Force Points: " + data.nutrition + "</h3>");
 //       }
 //     });
+
+$(document).ready(function(){
+    console.log("THIS IS A TEST!!!!!");
+    $("#save-btn").on("click", function(){
+        // var key = $(this).parent().attr("id")
+        console.log("CLICKKKKK")
+        // var key = window.localStorage.key(keyOne);
+        
+        // localStorage.setItem('keyOne', btn);
+
+    })
+})
+
+console.log("HELLO OUTSIDE TEST!!!");
+// $("#save-btn").on("click", function(){
+//     // var key = $(this).parent().attr("id")
+//     console.log("CLICKKKKK")
+//     // var key = window.localStorage.key(keyOne);
+    
+//     // localStorage.setItem('keyOne', btn);
+
+// })
+
+
+    if (typeof localStorage === "undefined" || localStorage === null) {
+        var localStorage = require('node-localstorage').localStorage;
+        localStorage = new localStorage('./scratch');
+    }
+
+    localStorage.setItem('key', 'value');
+    console.log(localStorage.getItem('key'))
+
