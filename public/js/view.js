@@ -61,24 +61,29 @@ $(document).ready(function(){
                 $(".modal-vitamin-a").html(`${res.vitamin_a} (%DV)`);
                 $(".modal-vitamin-c").html(`${res.vitamin_c} (%DV)`);
                 $(".modal-iron").html(`${res.iron} (%DV)`);
+
+
+                ///Setting Local Storage. 
+                $(document).ready(function(){
+                    $("#save-btn").on("click", function(){
+                        //console.log("CLICKKKKK")
+        
+                    var vegName = res.vegetable_name;
+                    
+                    localStorage.setItem("vegetableName", vegName);
+        
+                    //JSON.parse(localStorage.getItem("user")); --> This should be used to parse the name of the vegetable onto the screen where we want it. 
+        
+        
+                    
+                })
+            })
+
             }
 
             
         })
-        $(document).ready(function(){
-            $("#save-btn").on("click", function(){
-                //console.log("CLICKKKKK")
-
-            var vegName = res.vegetable_name;
-            
-            localStorage.setItem("vegetableName", vegName);
-
-            //JSON.parse(localStorage.getItem("user")); --> This should be used to parse the name of the vegetable onto the screen where we want it. 
-
-
-            
-        })
-    })
+        
         
 })
 
