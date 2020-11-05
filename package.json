@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mysql2": "^2.2.5",
+    "node-localstorage": "^2.1.6",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
