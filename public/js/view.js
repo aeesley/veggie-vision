@@ -30,7 +30,7 @@ $(document).ready(function(){
             }  
         })    
     })
-    $("#save-btn").on("click", function(){
+    $(".save-btn").on("click", function(){
         
         // take inventory of the localstorage
         /*
