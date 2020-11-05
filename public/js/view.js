@@ -46,8 +46,21 @@ $(document).ready(function(){
              
             success: function(res){
                 console.log(res.vegetable_name);
-                $(".modal-body").html(`Here is a ${res.vegetable_name}, you can eat this many ${res.serving} and has this many ${res.calories} calories. `);
                 $(".modal-title").html(`${res.vegetable_name}`);
+                $(".modal-healthbens").html(`${res.health_benefits}`);
+                $(".modal-popeats").html(`${res.popular_eats}`);
+                $(".modal-serving").html(`${res.serving}`);
+                $(".modal-calories").html(`${res.calories}`);
+                $(".modal-totalfat").html(`${res.total_fat} (g)`);
+                $(".modal-sodium").html(`${res.sodium} (g)`);
+                $(".modal-potassium").html(`${res.potassium} (g)`);
+                $(".modal-carbs").html(`${res.total_carbo_hydrate} (g)`);
+                $(".modal-fiber").html(`${res.dietary_fiber} (g)`);
+                $(".modal-sugar").html(`${res.sugar} (g)`);
+                $(".modal-protein").html(`${res.protein} (g)`);
+                $(".modal-vitamin-a").html(`${res.vitamin_a} (%DV)`);
+                $(".modal-vitamin-c").html(`${res.vitamin_c} (%DV)`);
+                $(".modal-iron").html(`${res.iron} (%DV)`);
             }
         })
     })
