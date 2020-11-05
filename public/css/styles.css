@@ -45,3 +45,38 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* MODAL stylin' */
+.my-modal-body {
+    font-weight: bold;
+}
+
+.modal-body {
+    color: black;
+}
+
+.save-btn {
+    background-color: rgb(23, 120, 20);
+}
+
+.save-btn:hover {
+    background-color: rgb(20, 82, 18);
+}
+
+.save-btn:focus {
+    background-color: rgb(20, 82, 18);
+}
+
+.btn-primary {
+    border-color: rgb(20, 82, 18);
+}
+
+.btn-secondary { 
+    background-color: rgb(32, 140, 28);
+    border-color: rgb(20, 82, 18);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(20, 82, 18);
+    color: white;
+}
