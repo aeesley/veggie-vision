@@ -58,6 +58,8 @@ $(document).ready(function(){
                     localStorage.setItem("vegetableName", vegName);
 
                     //JSON.parse(localStorage.getItem("user")); --> This should be used to parse the name of the vegetable onto the screen where we want it. 
+
+
                     
                 })
             })
