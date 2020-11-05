@@ -106,40 +106,8 @@
                 <!-- ASPARAGUS COLUMN -->
                 <div class="col-md-4 col-sm-6 text-left service-item scroll-animated-from-bottom">
 
-                   <img data-id="1" data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/asparagus.jpg" alt="image">
-                    <div class="veg-modals">
-                        {{!-- {{#each Vegetable}}
-                            <h2>{{this.dataValues.vegetable_name}}</h2>
-                            <h5>Health Benefits</h5></br>
-                            <body>{{this.dataValues.health_benefits}}</body>
-                            <h5>Popular Ways to Eat</h5></br>
-                            <body>{{this.dataValues.popular_eats}}</body>
-                            <h6>Serving Size</h6></br>
-                            <body>{{this.dataValues.serving}}</body>
-                            <h6>Calories</h6></br>
-                            <body>{{this.dataValues.calories}}</body>
-                            <h6>Total Fat</h6></br>
-                            <body>{{this.dataValues.total_fat}}</body>
-                            <h6>Sodium</h6></br>
-                            <body>{{this.dataValues.sodium}}</body>
-                            <h6>Potassium</h6></br>
-                            <body>{{this.dataValues.potassium}}</body>
-                            <h6>Total Carbohydrates</h6></br>
-                            <body>{{this.dataValues.total_carbo_hydrate}}</body>
-                            <h6>Dietary Fiber</h6></br>
-                            <body>{{this.dataValues.dietary_fiber}}</body>
-                            <h6>Sugar</h6></br>
-                            <body>{{this.dataValues.sugar}}</body>
-                            <h6>Protein</h6></br>
-                            <body>{{this.dataValues.protein}}</body>
-                            <h6>Vitamin A</h6></br>
-                            <body>{{this.dataValues.vitamin_a}}</body>
-                            <h6>Vitamin C</h6></br>
-                            <body>{{this.dataValues.viatmin_c}}</body>
-                            <h6>Iron</h6></br>
-                            <body>{{this.dataValues.iron}}</body>
-                        {{/each}} --}}
-                    </div>
+                   <img data-id="3" data-toggle="modal" data-target="#exampleModal" class="img-responsive veg_btn" src="/img/veg_btn/asparagus.jpg" alt="image">
+
                
                 </div>
                 <!-- /COLUMN -->
@@ -151,14 +119,42 @@
                     <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 style = "color:black" class="modal-title" id="exampleModalLabel"></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                       {{!-- AJAX call replaces  --}}
-                       
+                    {{!-- MODAL BODY --}}
+                    <div class="modal-body" style="color:black">
+                        {{!-- AJAX call replaces  --}}
+                       <p style="color:black; font-weight: bold">Health Benefits</p>
+                       <div class="modal-healthbens"></div>
+                        <p style="color:black; font-weight: bold">Popular Ways to Eat</p>
+                        <div class="modal-popeats"></div>
+                        <p style="color:black; font-weight: bold">Serving Size</p>
+                        <div class="modal-serving"></div>
+                        <p style="color:black; font-weight: bold">Calories</p>
+                        <div class="modal-calories"></div>
+                        <p style="color:black; font-weight: bold">Total Fat</p>
+                        <div class="modal-totalfat"></div>
+                        <p style="color:black; font-weight: bold">Sodium</p>
+                        <div class="modal-sodium"></div>
+                        <p style="color:black; font-weight: bold">Potassium</p>
+                        <div class="modal-potassium"></div>
+                        <p style="color:black; font-weight: bold">Total Carbohydrates</p>
+                        <div class="modal-carbs"></div>
+                        <p style="color:black; font-weight: bold">Dietary Fiber</p>
+                        <div class="modal-fiber"></div>
+                        <p style="color:black; font-weight: bold">Sugar</p>
+                        <div class="modal-sugar"></div>
+                        <p style="color:black; font-weight: bold">Protein</p>
+                        <div class="modal-protein"></div>
+                        <p style="color:black; font-weight: bold">Vitamin A</p>
+                        <div class="modal-vitamin-a"></div>
+                        <p style="color:black; font-weight: bold">Vitamin C</p>
+                        <div class="modal-vitamin-c"></div>
+                        <p style="color:black; font-weight: bold">Iron</p>
+                        <div class="modal-iron"></div>
                     </div>
                     <div class="modal-footer">
                         <div>
@@ -412,6 +408,7 @@
         <!-- JAVASCRIPTS -->
         <script type="text/javascript" src="/js/plugins.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+         <script type="text/javascript" src="/js/view.js"></script>
    
    
    
