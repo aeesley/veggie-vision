@@ -47,6 +47,7 @@ $(document).ready(function(){
             success: function(res){
                 console.log(res.vegetable_name);
                 $(".modal-body").html(`Here is a ${res.vegetable_name}, you can eat this many ${res.serving} and has this many ${res.calories} calories. `);
+                $(".modal-title").html(`${res.vegetable_name}`);
             }
         })
     })
