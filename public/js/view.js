@@ -57,18 +57,33 @@ $(document).ready(function(){
 
 
 
-///Setting up our local Storage
-// $(document).ready(function(){
-//     $("#save-btn").on("click", function(){
-//         // var key = $(this).parent().attr("id")
-//         console.log("CLICKKKKK")
-//          var key = window.localStorage.key(keyOne);
-//          var val = 
-        
-//          localStorage.setItem('keyOne', );
+//Setting up our local Storage
+$(document).ready(function(){
+    $("#save-btn").on("click", function(){
+        console.log("CLICKKKKK")
 
-//     })
-// })
+        var vegName = 
+         
+        //window.localStorage = Gives yu access to a property, can just omit the 'window.'
+        //localStorage gives you a local object. 
+        //console.log(localStorage);
+
+        //setItem takes two elements, a key and a value! The value is also automatically converted to a string if its an integer
+
+            //For us, we need that value to produce what is being displayed on the screen. Or just the Vegetable?
+        localStorage.setItem("Vegetable", "vegetableName")
+        //If you delete the above ^ you will still see it in the localStorage even if you refresh the server. Data does not expire.
+
+        //If we need to remove an item: localStorage.removeItem("key");
+            
+        //Testing to see if we can grab the above key with a getItem.
+        //console.log(localStorage.getItem("Vegetable"));
+
+        //Testing keys in our localStorage, this will grab the first key in localStorage, and display it on console. 
+        //console.log(localStorage.key(0));
+         
+    })
+})
 
 
 // $("#save-btn").on("click", function(){
