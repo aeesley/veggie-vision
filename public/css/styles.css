@@ -62,3 +62,11 @@
 .save-btn:hover {
     background-color: rgb(20, 82, 18);
 }
+
+.save-btn:focus {
+    background-color: rgb(20, 82, 18);
+}
+
+.btn-primary {
+    border-color: rgb(20, 82, 18);
+}
