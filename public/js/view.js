@@ -69,7 +69,6 @@ $(document).ready(function(){
 
 
 
-
 ///Setting up our local Storage
 // $(document).ready(function(){
 //     $("#save-btn").on("click", function(){
