@@ -26,7 +26,7 @@ $(document).ready(function(){
                 $(".modal-vitamin-a").html(`${res.vitamin_a} (%DV)`);
                 $(".modal-vitamin-c").html(`${res.vitamin_c} (%DV)`);
                 $(".modal-iron").html(`${res.iron} (%DV)`); 
-                $('#save-btn').val(id)               
+                $('.save-btn').val(id)               
             }  
         })    
     })
