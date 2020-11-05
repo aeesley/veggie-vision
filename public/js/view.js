@@ -60,32 +60,40 @@ $(document).ready(function(){
                 $(".modal-protein").html(`${res.protein} (g)`);
                 $(".modal-vitamin-a").html(`${res.vitamin_a} (%DV)`);
                 $(".modal-vitamin-c").html(`${res.vitamin_c} (%DV)`);
-                $(".modal-iron").html(`${res.iron} (%DV)`);
-
-
-                ///Setting Local Storage. 
-                $(document).ready(function(){
-                    $("#save-btn").on("click", function(){
-                        //console.log("CLICKKKKK")
-        
-                    var vegName = res.vegetable_name;
-                    
-                    localStorage.setItem("vegetableName", vegName);
-        
-                    //JSON.parse(localStorage.getItem("user")); --> This should be used to parse the name of the vegetable onto the screen where we want it. 
-        
-        
-                    
-                })
-            })
-
-            }
-
+                $(".modal-iron").html(`${res.iron} (%DV)`); 
+                $('#save-btn').val(id)               
+            }  
+        })    
+    })
+    $("#save-btn").on("click", function(){
+        //console.log("CLICKKKKK")
+        // take inventory of the localstorage
+        /*
+        let currentStorage;
+        if (localStorage.getItem('vegetableName')) {
+            currentStorage = JSON.parse(localStorage.getItem('vegetableName'))
+        } else currentStorage = [];
+        */
+        // ternary operator
+        let currStorage = localStorage.getItem('vegetableName') ? JSON.parse(localStorage.getItem('vegetableName')) : [];
+        // add new bit to currentStorage
+        var vegName = $(this).val();
+        if (currStorage.includes(vegName)) {
+            return;
+        } else {
+            currStorage.push(vegName);
             
-        })
+        }
+        // set localstorage with all new
+        localStorage.setItem("vegetableName", JSON.stringify(currStorage));
         
         
-})
+
+    //JSON.parse(localStorage.getItem("user")); --> This should be used to parse the name of the vegetable onto the screen where we want it. 
+
+
+        
+    })
 
 })
 
