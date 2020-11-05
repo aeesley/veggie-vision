@@ -70,3 +70,13 @@
 .btn-primary {
     border-color: rgb(20, 82, 18);
 }
+
+.btn-secondary { 
+    background-color: rgb(32, 140, 28);
+    border-color: rgb(20, 82, 18);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(20, 82, 18);
+    color: white;
+}
