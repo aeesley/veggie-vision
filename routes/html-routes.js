@@ -19,9 +19,9 @@ module.exports = function(app) {
 
     app.get("/all", function(req, res) {
       db.Vegetable.findAll({}).then(function(data) {
-        console.log("===================================");
-        console.log(data);
-        console.log("===================================");
+        // console.log("===================================");
+        // console.log(data);
+        // console.log("===================================");
         var vegetableObject = {
           Vegetable: data
         };
@@ -31,17 +31,6 @@ module.exports = function(app) {
       // res.render("index", {});
     });
 
-    // // add route loads the add.html page,
-    // // where users can enter new characters to the db
-    // app.get("/add", function(req, res) {
-    //   res.sendFile(path.join(__dirname, "../public/add.html"));
-    // });
-  
-    // // all route loads the all.html page,
-    // // where all characters in the db are displayed
-    // app.get("/all", function(req, res) {
-    //   res.sendFile(path.join(__dirname, "../public/all.html"));
-    // });
   
   };
 
