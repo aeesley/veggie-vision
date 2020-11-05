@@ -54,3 +54,11 @@
 .modal-body {
     color: black;
 }
+
+.save-btn {
+    background-color: rgb(23, 120, 20);
+}
+
+.save-btn:hover {
+    background-color: rgb(20, 82, 18);
+}
