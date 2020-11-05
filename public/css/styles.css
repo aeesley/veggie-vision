@@ -45,3 +45,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* MODAL stylin' */
+.my-modal-body {
+    font-weight: bold;
+}
+
+.modal-body {
+    color: black;
+}
