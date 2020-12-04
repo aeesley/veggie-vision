@@ -1,7 +1,7 @@
-# VEGURU
+# VEGGIE VISION 
  ```Understand Your Food```
 
-![Veguru Internal Logo](./readme_images/Veguru_Logo.jpg)
+![Veggie Vision Internal Logo](./readme_images/VegEye.png)
 
 
 ## Table of Contents
@@ -13,7 +13,7 @@
 * Additional Questions   
 
 ## Description 
-Here at veguru, we understand it can be difficult to know what to do with all those wild vegetables out there. I mean what is a beet, right? THat’s why we have created an application to help you find the perfect veggies for you. Whether you are working on a an iron deficiency   or just trying to get your kids to eat more greens, veguru has your back!
+Here at Veggie Vision, we understand it can be difficult to know what to do with all those wild vegetables out there. I mean what is a beet, right? THat’s why we have created an application to help you find the perfect veggies for you. Whether you are working on a an iron deficiency   or just trying to get your kids to eat more greens, VV has your back!
 
 
 ## Production Team
@@ -23,15 +23,15 @@ Here at veguru, we understand it can be difficult to know what to do with all th
 * [Justin Yocus](https://github.com/jyocus)
 
 ## How to Use
-When the web page for Veguru loads, take a minute to soak in all the new information pleasantly provided for you and your pals. Scroll around and see what image catches your eye. Once you make your decision, click on the image to find out all the awesome information associated with that veggie! You can even save the veggies you are most interested in to your favorites.
+When the web page for Veggie Vision loads, take a minute to soak in all the new information pleasantly provided for you and your pals. Scroll around and see what image catches your eye. Once you make your decision, click on the image to find out all the awesome information associated with that veggie! You can even save the veggies you are most interested in to your favorites.
 
 ## Demo Links 
-[Veguru on Heroku](https://dry-oasis-44384.herokuapp.com/)
+[Veggie Vision on Heroku](https://dry-oasis-44384.herokuapp.com/)
 
-[Veguru on Github](https://github.com/aeesley/project-2-veguru)
+[Veggie Vision on Github](https://github.com/aeesley/project-2-veguru)
 
 ## Screenshot
-![Veguru Landing](./readme_images/VG_readme_screenshot2.png)
+![Veggie Vision Landing](./readme_images/VV_readme_screenshot.png)
 ![Veggie Section](./readme_images/VG_readme_screenshot.png)
 
 ## Additional Questions
